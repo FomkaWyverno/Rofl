@@ -89,7 +89,7 @@ hr {
   background-color: #00a2ff;
   height: 50%;
   width: 100%;
-  bottom: 0;
+  top: 0;
 }
 
 .textBlock__text {
