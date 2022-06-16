@@ -1,0 +1,40 @@
+@import"default";
+
+.textBlock {
+    display: flex;
+    width: 100%;
+    height: 100%;
+
+    justify-content: center;
+    align-items: center;
+
+    background-color: #f0f324;
+
+    &::before {
+        position: absolute;
+        content: '';
+        background-color: #00a2ff;
+        height: 50%;
+        width: 100%;
+        bottom: 0;
+    }
+
+    &__text {
+        position: absolute;
+        width: 100%;
+        z-index: 1;
+        font-size: 100px;
+
+        color: #fff;
+        animation: scrolling 10s linear infinite;
+    }
+}
+
+@keyframes scrolling {
+    0% {
+        left: 100%;
+    }
+    100% {
+        left: -50%;
+    }
+}

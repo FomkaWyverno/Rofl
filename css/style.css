@@ -1,0 +1,112 @@
+html {
+  box-sizing: border-box;
+  overflow-x: hidden;
+  width: 100%;
+  height: 100%;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  display: block;
+  margin: 0;
+  font-family: 'Quadrat Grotesk New W03 Bold', open-sans, sans-serif;
+  width: 100%;
+  height: 100%;
+  color: #000;
+}
+
+button, input, textarea {
+  font: inherit;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+h1, h2, h3, p, ul, ol {
+  color: #fff;
+  padding: 0;
+  margin: 0;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+th {
+  padding: 0;
+  text-align: left;
+  cursor: pointer;
+}
+
+td {
+  text-align: center;
+  padding: 0;
+}
+
+.visiually-hidden {
+  visibility: hidden;
+}
+
+.Mobile {
+  display: none;
+}
+
+hr {
+  margin: 0px;
+  width: 50%;
+  size: 5px;
+}
+
+.textBlock {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  background-color: #f0f324;
+}
+
+.textBlock::before {
+  position: absolute;
+  content: '';
+  background-color: #00a2ff;
+  height: 50%;
+  width: 100%;
+  bottom: 0;
+}
+
+.textBlock__text {
+  position: absolute;
+  width: 100%;
+  z-index: 1;
+  font-size: 100px;
+  color: #fff;
+  animation: scrolling 10s linear infinite;
+}
+
+@keyframes scrolling {
+  0% {
+    left: 100%;
+  }
+  100% {
+    left: -50%;
+  }
+}
+/*# sourceMappingURL=style.css.map */
